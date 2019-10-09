@@ -30,8 +30,13 @@ nav a{
   text-decoration: none;
 }
 
+nav .row ul{
+  display: flex;
+  justify-content: flex-end;
+}
+
 nav .row ul li{
-  display: inline-block;
+  list-style: none;
   font-size: 13px;
   font-weight: lighter;
   margin: 0 1%;
@@ -59,13 +64,17 @@ nav .row p{
   border-radius: 0.6em;
 }
 
-nav .row2{
-  height: 65px;
-  line-height: 65px;
+nav .row2 .container{
+  padding: 20px 0;
+}
+
+nav .row2 ul{
+  height: 35px;
+  display: flex;
 }
 
 nav .row2 ul li{
-  display: inline-block;
+  list-style: none;
   line-height: 35px;
   font-weight: 600;
   margin: 0 1.5%;
@@ -77,11 +86,6 @@ nav .row2 ul li a:hover{
 
 nav .row2 img{
   height: 35px;
-  margin-top: 6%;
-}
-
-nav .row2 .col-lg-2{
-  line-height: 65px;
 }
 
 nav .row2 button{
@@ -167,7 +171,7 @@ header .ps-ab{
 
 @media screen and (max-width: 767px) {
   header{
-    padding-top: 20%; 
+    padding-top: 20%;
   }
 }
 
@@ -286,7 +290,7 @@ header .bt button i{
 
 .bg{
   background-repeat: no-repeat;
-  background-size: 100px;
+  background-size: 150px;
   background-position: center;
 }
 
